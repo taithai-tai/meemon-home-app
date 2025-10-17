@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>มีมนต์แอปลิเคชั่น</title>
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      margin: 0;
+      background: radial-gradient(circle at top, #1c1b2a, #0d0d15);
+      color: white;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 30px;
+      letter-spacing: 1px;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 80%;
+      max-width: 400px;
+    }
+
+    button {
+      background: linear-gradient(90deg, #423b78, #6c63ff);
+      border: none;
+      color: white;
+      padding: 15px;
+      border-radius: 12px;
+      font-size: 1.1em;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #6c63ff, #423b78);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.8em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <h1>มีมนต์แอปลิเคชั่น ✨</h1>
+  <div class="button-container">
+    <button onclick="go('tarot.html')">🔮 ดูดวงด้วยไพ่ยิปซี</button>
+    <button onclick="go('lucky-number.html')">🎲 สุ่มเลขนำโชค</button>
+    <button onclick="go('lucky-color.html')">🎨 สีมงคลประจำวัน</button>
+    <button onclick="go('birth-god.html')">🕉 เทพประจำวันเกิด</button>
+    <button onclick="go('contact.html')">📞 ติดต่อเรา</button>
+    <button onclick="go('shop.html')">🛍 สินค้าของเรา</button>
+    <button onclick="go('club.html')">💫 เข้ากลุ่มลับ คลับมีมนต์</button>
+  </div>
+
+  <footer>© 2025 มีมนต์แอปลิเคชั่น</footer>
+
+  <script>
+    function go(url) {
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>
